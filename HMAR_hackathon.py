@@ -18,8 +18,6 @@ class Node():
             return
             
     def computeProb(self,prior,number,lookup):
-        x = prior
-        '''
         if self.parent:
             trans = np.zeros(self.parent.prob.shape)
             x = lookup[:,0:3]==lookup[self.parent.data,number]
@@ -34,7 +32,6 @@ class Node():
             x = self.neigh.prob
         else:
             x = prior
-        '''
         self.prob = x/sum(x)
 
 def generateSeq(Order,Size):
