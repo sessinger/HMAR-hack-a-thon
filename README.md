@@ -6,3 +6,5 @@ This project involved implementing a simple probabilistic model to construct a r
 
 
 As shown in figure 1 the notes chosen for the beat nodes (N) are dependent on the notes chosen for the measure nodes (S) and the sixteenth (M) notes depend on the notes chosen for the beats, thus giving a hierarchical structure. For example, notes that are used in a beat node are given a greater weight when selecting the beat node's sixteenth node child. At this time the prior probabilities of the measure nodes (M) were set manually with the intent of performing inference from a song database in the future.  
+
+Figure and Audio Files: http://music.ece.drexel.edu/HAMRPhilly2014Proceedings/doku.php?id=song_auto-composition
